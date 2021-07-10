@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2? family = Tourney: wght @ 100 & display = swap');
+
+* {
+  margin:0px;
+  padding: 0px;
+}
+
+/* INICIO HORA */
+
+#hora{
+position: absolute;
+  width: 100%;
+  background-color: mediumorchid;
+
+}
+
+/* INICIO NOME */
+#nome {
+
+    
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding: 200px 0px 0px 0px ;
+    
+    
+   
+    
+    
+  } 
+
+  #nome h1{
+   
+    position: relative;
+    top: -100px;
+  }
+
+
+  #titulo-dev {
+    display:inline-flex;
+    position: relative;
+    top: -70px;
+    
+  }
+
+  #titulo-dev span {
+
+    font-size: 30pt;
+    position: relative;
+    top: -10px;
+  }
+
+  /*
+
+  .
+  .
+  .
+  .
+   
+  */
+
+
+
+
+
+@media (max-width:650px) {
+
+  #bemVindo {
+    height: 100px;
+  }
+
+}
