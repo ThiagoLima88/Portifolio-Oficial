@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+         <!--<meta http-equiv="refresh" content="5"> -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> Meu Perfil </title>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="_css\estilo.css">
+        <link rel="javascript" type="javascript" href="_scrip\estilo.css">
+
+        
+            
+    </head>
+
+    <body >
+        
+
+        <!--  ---------INICIO DO HEADER--------- -->
+       <div id="header">
+            <header id="headerPrincipal">
+                <img src="_img/imgDeEntrada.png" id="ImgDeEntrada">
+                <p id="meuNome">Thiago Lima Mascarenhas</p>
+                
+            </header> 
+            <div class="saibaMais">
+                <input type="checkbox" name="saiba" id="saiba"  >
+                    <label for="saiba" id="labelMenu">    
+                        <div class="idButtonSaiba" id="div1"></div>
+                        <div class="idButtonSaiba" id="div2"></div>
+                        
+                    </label>
+                    <div id="info">
+                        
+                        
+                    
+                        <div id="boxMenu">
+                            <div id="home" class="menu">
+                                <a href="index.html"><p>Home</p></a>
+
+                            </div>
+                            <div id="conhecimento" class="menu">
+                                <a href="#idConhecimento"><p>Conhecimento</p></a>
+
+                            </div>
+                            <div id="projetos" class="menu">
+                                <a href="#idProjetos"> <p>Projetos</p></a>
+
+                            </div>
+                            <div id="contato" class="menu">
+                                <a href="#idContato"> <p>Contato</p></a>
+
+                            </div>
+                            
+                        </div>
+                        <div id="boxInfo">
+                            <div id="intagram" class="infoSocial">
+                                <p>ICONE INSTAGRAM</p>
+
+                            </div>
+                            <div id="likedin" class="infoSocial">
+                                <p> ICONE Likedin</p>
+
+                            </div>
+                            <div id="whatsapp" class="infoSocial">
+                                <p> ICONE whatsap</p>
+
+                            </div>
+                            <div id="github" class="infoSocial">
+                                <p>ICONE Github</p>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </input>
+            </div>
+        </div>
+
+        <!-- FIM DO HEADER-->
+
+        <!--  --------- iNICIO DOS CONHECIMENTOS ------------ -->
+        <section id="idConhecimento" class="sectionBox">
+            
+
+            <!-- INICIO CARD BANCO DADOS-->
+            <div class="box">    
+                
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                
+            </div>
+            
+        </section>
+       
+
+        <!-- --------- FIM DOS CONHECIMENTO --------------- -->
+
+
+
+
+        <!-- ----------- INICIO DOS PROJETOS --------- -->
+        <section id="idProjetos" class="sectionBox">
+            
+
+            <!-- INICIO  BOX BANCO DE DADOS-->
+            <div class="box">  
+                <div id="bancoDados" class="projectBox">
+                    <a href="bancodados.html" >
+                    
+                        <div class="descBox">
+                            
+                        </div>
+                    </a>
+                </div>
+                    
+           
+                
+            
+                <!-- FIM  BOX BANCO DE DADOS-->
+
+                <!-- INICIO  BOX PYTHON -->
+
+            
+                <div id="python" class="projectBox">
+                    <a href="#" >
+                        <div class="descBox">
+                            
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- FIM BOX PYTHON-->
+
+                <!-- INICIO  BOX HTML/CSS -->
+                
+                <div id="html-css-js" class="projectBox">
+                    <a href="#" >
+                        <div class="descBox">
+                            
+                        </div>
+                    </a>
+                </div>
+            
+                <!-- FIM  BOX HTML/CSS -->
+
+            
+
+            
+                
+            
+                
+            </div>
+
+                <!-- FIM  BOX JAVASCRIPT -->
+
+        </section>
+        <!-- ----------------- FIM DOS PROJETOS ------------ -->
+
+    
+        <!--  ---------INICIO DO CONTATO --------- -->
+        <!-- <section id="idContato" class="sectionBox">
+            
+            
+                <div id="asideContato" >
+                    
+                </div>
+                <div class="contato">
+                        <form method="GET" >
+                            <!-- nome -->
+                            <div class="divInp"><label for="idNome"> Nome</label>   <input type="text" name="Nnome" id="idNome" class="inp" placeholder="Nome"></div>
+                            <!-- email -->
+                            <div class="divInp"><label for="idEmail"> Email</label>   <input type="email" name="email" id="idEmail" class="inp" placeholder="Email"></div>
+                            <!-- cidade -->
+                            <div class="divInp"><label for="idCidade"> Telefone</label>   <input type="text" name="cidade" id="idCidade" class="inp" placeholder="Cidade"></div>
+                            
+                            
+
+                            <button id="idButtonEnviar"> Enviar </button>
+
+
+                        </form>
+                </div>
+
+        
+        </section>
+         -->
+
+        <!-- ----------- FIM DO CONTATO ----------- -->
+        
+
+
+        <footer id="Rodape">
+
+            TL - Thiago Lima 
+
+            -- icon insta
+            --icon likedin
+            -- icon github
+            -- icon WorkLove
+            
+        </footer>
+
+        <script src="Js/Script.js"></script>
+    </body>
+</html>

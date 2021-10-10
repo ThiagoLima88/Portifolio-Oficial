@@ -12,4 +12,450 @@
 
 
 
+#header{ display: flex; }
+
+
+#headerPrincipal {
+ 
+  width: 100%;
+  height: 797px;
+  background-color: rgb(111, 1, 255);  
+}
+
+#quadro {
+  position: absolute;
+  top: 25%;
+  left: 41%;
+}
+
+#ImgDeEntrada{
+  border-radius:50%;
+  width: 200px;
+  height: 200px;
+}
+
+.fundoImgDeEntrada {
+  display: inline-block;
+  padding: 4px;
+  background: linear-gradient(rgb(166, 141, 197), rgb(240, 50, 59),rgb(111, 1, 255));
+  margin: auto;
+  border-radius: 50%;
+  background-size: 400% 500%;
+  animation:   animacaoGradiente 2s linear infinite;
+  
+  
+}
+
+@keyframes animacaoGradiente {
+  25% {
+    background-position: left bottom;
+  }
+  50%{
+    background-position: left top;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: right bottom;
+  }
+}
+
+
+
+#Titulo {
+  position: relative;
+  top: 100px;
+  left: 20%;
+}
+
+#Titulo h1 {
+  
+  font-size: 40pt;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  top: 100px;
+  color: red;
+  
+}
+
+#meuNome {
+  position: relative;
+  top: 27%;
+  left:-215px;
+  font-size: 6vw;
+  font-family: Sanchez;
+  color:rgb(111, 1, 255);
+  -webkit-text-stroke: 0.3vw rgb(145, 75, 238);
+  text-transform: uppercase;
+
+}
+
+#meuNome::after {
+  content: attr(data-text);
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 0%;
+  height: 100%;
+  color: rgb(145, 75, 238);
+  -webkit-text-stroke: 0vw rgb(145, 75, 238);
+  border-right: 4px solid rgb(90, 80, 104);
+  overflow: hidden;
+  animation: pintarMeuNome 6s linear infinite;
+}
+
+
+@keyframes pintarMeuNome {
+  0%,50%,100%{
+    width:0%;
+  }
+  50%{
+    width:58% ;
+  }
+}
+
+.fundoIconDeEntrada {
+  display: inline-block;
+  padding: 2px;
+  background: linear-gradient(rgb(166, 141, 197), rgb(240, 50, 59),rgb(111, 1, 255));
+  margin: 1% 41% 0 42%;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation:   animacaoGradiente 2s linear infinite;
+  
+  
+}
+
+#iconDeEntrada{
+  padding: 2px;
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+
+.text{
+  margin:60px;
+  text-align: center;
+  font-size: 25pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#labelMenu {
+  
+  position: absolute;
+  right: 0;
+  margin: 25px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+#saiba {
+  display: none;
+}
+
+.idButtonSaiba{
+  background-color: black;
+  position: relative;
+  display: flex;
+  margin: 4px;
+  height: 4px;
+  border-radius: 30px;
+  width: 50px;
+
+}
+
+
+
+
+#saiba:checked ~ #labelMenu #div2 {
+  transform: rotate(90deg);
+  top: 10px;
+  
+}
+
+#painelMenu {
+  display: none;
+
+
+}
+
+
+
+
+
+
+#saiba:checked ~ #painelMenu {
+ 
+  display: block;
+  background-color: rgb(111, 1, 255);
+  position: relative;
+  border: 2px solid rgba(4, 1, 5, 0.808);
+  border-bottom: none;
+  
+  opacity: 1;
+  top: 170px;
+  left: 440px;
+  width: 40%;
+  height: 60%;
+
+}
+
+
+
+#saiba:checked ~ #quadro{
+  display: none;
+}
+
+#menus { display:block; position: relative; margin: 0 10% 0 5%; top:10%;   }
+
+
+
+.menu {
+  position: relative;
+  font-size: 20pt;
+  left: 4%;
+  text-align: center;
+  font-family: sanchez;
+}
+
+.menu p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#iconSociais {
+  
+  display: inline-flex;
+  position: relative;
+  width: 101%;
+  margin: 15% 0% 0 0%;
+  justify-content: space-around;
+ 
+}
+
+
+
+.icon {
+  margin-right:10px;
+  border: 1px black solid;
+  border-radius: 50%;
+  line-height: 75px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  text-align: center;
+  
+}
+
+
+
+
+.fundoIcon{
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+  
+}
+
+#facebook{
+  background-image: url("../_img/img-icons/iconFacebook.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+#instagram{
+  background-image: url("../_img/img-icons/iconInstagram.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  
+  background-size: 100% 100%;
+}
+
+#linkedin{
+  background-image: url("../_img/img-icons/iconLinkedin.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  
+  background-size: 150% 150%;
+}
+
+#git{
+  background-image: url("../_img/img-icons/iconGitHub.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  
+  background-size: 120% 130%;
+  width: 98px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FIM HEADER  */
+
+
+/*
+  ------------- CONHECIMENTO  ------------------
+*/
+
+
+#idConhecimento {
+
+  margin-top: 0px;
+
+}
+
+.sectionBox {
+
+  
+  width: 90%;
+  height: auto;
+  margin:9% 0 0 5% ;
+}
+
+
+
+
+
+.box {
+  display:flex;
+  align-items: space-evenly;
+}
+
+.projectBox {
+  margin: 20px 3% ;
+  padding: 10px;
+  width: 30%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+ 
+  
+
+}
+
+.projectBox:hover{
+  
+  border:1px solid black;
+  border-radius: 30%;
+  transition: 0.5s ease-in;
+
+}
+
+.descBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#bancoDados{
+  background-image: url("../_img/banco-de-dados.png");
+}
+
+#html-css-js {
+  background-image: url("../_img/html-css-js.png");
+}
+
+
+#python {
+
+  background-image: url("../_img/python.jpg");
+
+}
+
+
+
+/*
+  ------------- CONHECIMENTOS   ------------------
+*/
+
+
+
+
+
+.conheceCard {
+  margin: 20px 3%;
+  padding: 6px;
+  width: 30%;
+  height: 200px;
+  
+
+}
+
+.imgCard {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  height: 50%;
+  width: 50%;
+}
+
+.descCard{
+
+  margin: 4px 0 0 0 ;
+}
+
+
+/*
+  -------------   CONTATO  ------------------
+*/
+
+#idContato {
+
+ 
+  width: 100%;
+  margin: 0;
+}
+
+.inp {
+
+  border-radius: 20%;
+  height: 70px;
+  width: 10%;
+  border: 1px solid black;
+
+}
+
+.contato {
+  display: flex;
+  height: 200px;
+  
+  
+  margin: 0 10% 0 10%;
+
+
+
+}
+
+
+
+/* -----   inputs ----- */
+
+
+
+
+
+
+/* ----------- Rodape ----------- */
+
+
+#Rodape {
+  margin-top: 50px;
+}
+
+
+

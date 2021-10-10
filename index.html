@@ -6,11 +6,16 @@
          <!--<meta http-equiv="refresh" content="5"> -->
          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title> Meu Perfil </title>
-        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
         <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="_css\estilo.css">
+        <link rel="stylesheet" type="text/css" href="_css\media.css">
         <link rel="javascript" type="javascript" href="_scrip\estilo.css">
 
         
@@ -19,161 +24,109 @@
 
     <body >
         
+       <div id="header"> <!-- TAG INICIAL DO HEADER -->
 
-        <!--  ---------INICIO DO HEADER--------- -->
+            <header id="headerPrincipal"> <!-- TAG INICIAL DO HEADER PRINCIPAL -->
 
-        <header id="headerPrincipal"> 
-            <h1>Desenvolvedor Web</h1>
-            <h2>Thiago Lima</h2>
+                <input type="checkbox" name="saiba" id="saiba"><!-- CHECKBOX PARA CRIAR COMPORTAMENTO NO BOTAO -->
 
-            <button>Saiba mais</button>
+                    <label for="saiba" id="labelMenu">   <!-- DIVS COMO BOTAO PARA OS MENUS --> 
+                        <div class="idButtonSaiba" id="div1"></div>
+                        <div class="idButtonSaiba" id="div2"></div>
+                        
+                    </label>
+                    
 
-            <!--  ------------- MENU ----------------  -->
+                </input> <!-- TAG FINAL - ID = " saiba " -->
 
-            <!--<nav id="menu">
-                -- home
-                -- conhecimento
-                -- Projetos
-                -- contatos 
-            </nav>-->
-            
-        </header> 
+                <div id="quadro"> <!-- TAG INCIAL DO QUADRO DENTRO DO BANNER -->
+                    <div class="fundoImgDeEntrada">
+                        <img src="_img/imgDeEntrada.png" id="ImgDeEntrada">
+                    </div>
 
-        <!-- FIM DO HEADER-->
+                    <p id="meuNome" data-text="Thiago">Thiago Lima...  </p>
 
-        <!--  --------- iNICIO DOS CONHECIMENTOS ------------ -->
+                </div><!-- TAG FINAL - ID = " quadro " -->
 
-        <section id="idConhecimento" class="sectionBox">
-            <h1> Conhecimento </h1>
-
-            <!-- INICIO  BOX BANCO DE DADOS-->
-            <div id="bancoDados" class="conheceBox">
-                <h3>banco de dados</h3>
-                <div class="descBox">
-                    descrição
-                </div>
-            </div>
-            <!-- FIM  BOX BANCO DE DADOS-->
-
-            <!-- INICIO  BOX HTML/CSS -->
-
-            <div id="html-css" class="conheceBox">
-                <h3>html css</h3>
-                <div class="descBox">
-                    descrição
-                </div>
-            </div>
-            <!-- FIM  BOX HTML/CSS -->
-
-            <!-- INICIO  BOX PYTHON -->
-
-
-            <div id="python" class="conheceBox">
-                <h3>python</h3>
-                <div class="descBox">
-                    descrição
-                </div>
-            </div>
-
-            <!-- FIM BOX PYTHON-->
-
-            <!-- INICIO  BOX JAVASCRIPT-->
-
-            <div id="javaScript" class="conheceBox">
-                <h3>JavaScript</h3>
-                <div class="descBox">
-                    descrição
-                </div>
-            </div>
-
-            <!-- FIM  BOX JAVASCRIPT -->
-
-        </section>
-
-        <!-- --------- FIM DOS CONHECIMENTO --------------- -->
-
-
-
-
-        <!-- ----------- INICIO DOS PROJETOS --------- -->
-        <section id="idprojetos" class="sectionBox">
-            <h1>Projetos</h1>
-
-            <!-- INICIO CARD BANCO DADOS-->
-            <div id="projectBancoDados" class="projectCard">
-                <div class="imgCard">
-                    <h3> img </h3>
-                </div>
-                <div class="descCard">
-                    Desc Banco de dados
-                </div>
-            </div>
-            <!-- FIM CARD BANCO DADOS-->
-
-            <!-- INICIO CARD PYTHON-->
-            <div id="projectPython" class="projectCard">
-                <div class="imgCard">
-                    <h3>img</h3>
-                </div>
-                <div class="descCard">
-                    Desc Python
-                </div>
-            </div>
-            <!-- FIM CARD PYTHON-->
-
-            <!-- INICIO CARD HTML/CSS-->
-            <div id="projectHtmlCss" class="projectCard">
-                <div class="imgCard">
-                    <h3>img</h3>
-                </div>
-                <div class="descCard">
-                    Desc Html-Css
-                </div>
-            </div>
-            <!-- FIM CARD HTML/CSS -->
-
-            <!-- INICIO CARD JAVASCRIPT -->
-
-            <div id="projectJs" class="projectCard">
-                <div class="imgCard">
-                    <h3>img</h3>
-                </div>
-                <div class="descCard">
-                    desc Js
-                </div>
-            </div>
-            <!-- FIM CARD JAVASCRIPT -->
-
-            
-        </section>
-        <!-- ----------------- FIM DOS PROJETOS ------------ -->
-
-    
-        <!--  ---------INICIO DO CONTATO --------- -->
-        <section id="idContato" class="sectionBox">
-            <div id="imgContato">
-                <h3>img contato</h3>
-            </div>
-
-            <form>
-                -- nome 
-                -- email
-                -- cidade
-                -- estado 
                 
-                <button>
-                    Enviar
-                </button>
+                    <div id="painelMenu"><!-- TAG INCIAL DO PAINEL DO MENU  -->
 
+                        <div id="iconFotoEntrada">
+                            <div class="fundoIconDeEntrada">
+                                <img src="_img/imgDeEntrada.png" id="iconDeEntrada">
+                            </div>
+                        </div>
 
-            </form>
+                        
+                        <div id="menus"> <!-- TAG INICIAL DOS MENUS -->
 
-        </section>
- 
+                            <div class="menu">
+                                <p>Projetos </p> 
+                            </div>
 
+                            <div class="menu">
+                                <p>Conhecimentos</p>
+                            </div>
+                            
+                            <div class="menu">
+                                <p>Saiba Mais </p>
+                            </div> 
 
+                            <div class="menu">
+                                <p>Por um fio </p> 
+                            </div>
 
-        <!-- ----------- FIM DO CONTATO ----------- -->
-        
+                        </div> <!-- TAG FINAL - ID= " menus " -->
+
+                        
+                        <div id="iconSociais"><!-- TAG INICIAL DOS ICONES REDES SOCIAIS -->
+
+                            <div class="icon">
+
+                                <div class="fundoIcon" id="facebook">
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="icon">
+
+                                <div class="fundoIcon" id="instagram">
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="icon">
+
+                                <div class="fundoIcon" id="linkedin">
+                                    
+                                </div>  
+
+                            </div>
+
+                            <div class="icon">
+
+                                <div class="fundoIcon" id="git">
+                                   
+                                </div>
+
+                            </div>
+
+                        </div> <!-- TAG FINAL - ID= " iconSociais " -->
+
+                    </div><!-- TAG FINAL - ID= " painelMenu " -->
+
+                
+                
+            </header> <!-- TAG FINAL - ID= " headerPrincipal " -->
+            
+                
+            
+        </div> <!-- TAG FINAL - ID= " header " -->
+
+    <!-- FIM DO HEADER-->
+
     </body>
 </html>
+
